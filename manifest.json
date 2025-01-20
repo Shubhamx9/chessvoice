@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Chess Voice Control",
+    "version": "1.0",
+    "description": "Voice control for Chess.com moves",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [
+      "https://www.chess.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.chess.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
